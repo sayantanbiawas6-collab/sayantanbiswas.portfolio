@@ -132,6 +132,11 @@ header nav a{
     height: 200px;
     object-fit: cover;
 }
+#about figure img:hover{
+    transform: scale(1.04);
+    box-shadow: 0 10px 10px rgba(43, 42, 42, 0.684);
+
+}
 #about figcaption h5{
     color: rgb(82, 82, 82);
     letter-spacing: 2px;
@@ -181,18 +186,21 @@ body{
     border-left: 5px solid rgb(82, 82, 222);
     padding: 0 10px;
     font-weight: 900;
+    margin-bottom: 10px;
 }
 #project .div{
     display: flex;
-    gap: 10px;
+    gap: 30px;
     padding: 10px;
     text-wrap: nowrap;
+    margin-bottom: 10px;
 }
 #project .div article h3{
     color: #060709;
-    font-size: 20px;
+    font-size: 17px;
     text-align: start;
     padding-bottom: 10px;
+    font-weight: 600;
 }
 #project .div article p{
     text-align: start;
@@ -203,16 +211,23 @@ body{
     color: rgb(102, 96, 96);
 }
 #project .div article a{
-    /* display: inline-block; */   
+    display: inline-block;   
     text-decoration: none;
     /* border: 1px solid black; */
-    padding: 10px 10px;
+    padding: 15px 15px;
     border-radius: var(--radius-sm);
     background-color: #3b82f6;
     color: var(--white);
     font-size: 17px;
     font-weight: 600;
     font-family: var(--font-body);
+    display: flex;
+    align-items: start;
+    width: 170px;
+}
+#project .div article a:hover{
+    background-color:#054ab8c8 ;
+    color: white;
 }
 #project .div article{
     padding: 20px 20px;
@@ -220,6 +235,10 @@ body{
     background-color: rgba(231, 230, 230, 0.382);
     border-radius: var(--radius-md);
 
+}
+#project .div article:hover{
+    transform: translate(0,-5px);
+    box-shadow: 0 5px 5px rgba(43, 42, 42, 0.538);
 }
 
 #project .skills{
