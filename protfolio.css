@@ -223,7 +223,7 @@ body{
     font-family: var(--font-body);
     display: flex;
     align-items: start;
-    width: 170px;
+    width: 160px;
 }
 #project .div article a:hover{
     background-color:#054ab8c8 ;
