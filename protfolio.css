@@ -402,3 +402,98 @@ body{
     color: var(--color-text-muted);
     margin-top: 20px;
 }
+
+@media (max-width: 992px) {
+
+    #about,
+    #project,
+    #intro,
+    #contact {
+        width: 90%;
+    }
+
+    #project .div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #project .div article {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .skills ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #lastpage form input,
+    #lastpage form textarea {
+        width: 100%;
+    }
+
+    #linklast {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 180px;
+        text-align: center;
+    }
+
+    #about figure img {
+        width: 130px;
+        height: 130px;
+    }
+
+    #about h2,
+    #project h2,
+    #intro h2,
+    #contact h2 {
+        font-size: 22px;
+    }
+
+    #project .div article a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .skills ul {
+        justify-content: center;
+    }
+
+    .skills ul li {
+        flex: 1 1 120px;
+        text-align: center;
+    }
+
+    #lastpage p {
+        font-size: 16px;
+        word-break: break-word;
+    }
+
+    #linklast p {
+        font-size: 14px;
+    }
+}
